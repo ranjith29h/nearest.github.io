@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>zomato Api</title>
+  </head>
+
+  <body ng-app="mainApp">
+    <div ng-include="'./template/header.html'"></div>
+
+    <div class="" ng-controller="search">
+    <div class="" ng-include="'./template/search.html'"></div>
+    <div ng-include="'./template/res_list.html'"></div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCWyJcV2vrdapkb4z2EUF7bcgKOR3wBMYc&libraries=places,geometry" type="text/javascript"></script>
+    <script type="text/javascript" src="./src/script/google_location.js"></script>
+    <script type="text/javascript" sr="./src/script/google_map.js"></script>
+    <script type="text/javascript" src="./src/script/model/mainApp.js"></script>
+    <script type="text/javascript" src="./src/script/filter/setPrice.js"></script>
+    <script type="text/javascript" src="./src/script/apiCall/zomatoApi.js"></script>
+    <script type="text/javascript" src="./src/script/controller/searchController.js"></script>
+  </body>
+  </html>

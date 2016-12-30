@@ -1,0 +1,39 @@
+<div class="" ng-show="showLoading">
+  <img src="./src/images/loading.gif" />
+</div>
+
+<div class="res_container" >
+  <div class="col-md-3 map" ng-show="showMap">
+      <div id="map" style="width:100%;height:400px"></div>
+  </div>
+  <div class="col-md-8 res_list" ng-if="data">
+  <ul>
+    <li ng-repeat="item in data">
+      <div class="col-md-12 list_container">
+        <a ng-href="{{item.restaurant.book_url}}" target="_blank" class="res_image">
+          <div class="col-md-2 res_image_container">
+
+              <img ng-src="{{item.restaurant.featured_image || 'http://placehold.it/350x150'}}" class="img-responsive res_image_item"/>
+
+          </div>
+          <div class="col-md-7 res_content">
+              <h5 class="res_title">{{item.restaurant.name}}</h5>
+              <h6 class="res_cuis">{{item.restaurant.cuisines}}</h6>
+              <div class="col-md-12 res_feature">
+                <div class="col-md-2 res_price_range">
+                  <p title="price range">{{item.restaurant.price_range | setPrice }}</p>
+                </div>
+                <div class="col-md-3 res_online">
+                  <p ng-if="item.restaurant.is_delivering_now"><span class="glyphicon glyphicon-thumbs-up online_text"> Delivery</span></p>
+                </div>
+                <div class="col-md-6 res_online">
+                  <p><span class="glyphicon glyphicon-star" style="color:#ffd925;" aria-hidden="true"></span> <strong>{{item.restaurant.user_rating.aggregate_rating}} / 5</strong> from {{item.restaurant.user_rating.votes}} reviews</p>
+                </div>
+              </div>
+          </div>
+          </a>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>

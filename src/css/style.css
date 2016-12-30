@@ -1,0 +1,115 @@
+body{
+  background-color: #ededed;
+}
+.navbar {
+    padding-top: 6px;
+    padding-bottom: 1px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #757575;
+    background-color: white;
+    height: 60px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+.navbar-brand{
+  padding-top: 0 !important;
+}
+.main_backgroud{
+  max-height: 90%;
+  background-image: url('http://www.leonardoshamilton.co.uk/images/slideshow/misc/italian-restaurant-hamilton-1.jpg');
+  background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.search_container{
+  padding-bottom: 5%;
+}
+.search_button_container{
+  padding-left: 0 !important;
+}
+.search_button {
+  padding: 8%;
+background: blue;
+color: white;
+border: none;
+letter-spacing: 1px;
+}
+.site_title{
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  letter-spacing: 2px;
+}
+#place_search{
+  padding: 3.1%;
+}
+.res_container{
+  margin-top: 3%;
+}
+.res_list{
+  height:100px;
+}
+.res_list ul li{
+  list-style-type: none;
+}
+.list_container{
+  padding:0%;
+  border-top: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  background-color: white;
+}
+.res_image_container{
+  padding: 0;
+}
+.res_image_item{
+  margin-top:10px;
+  width: 80px;
+    height: 80px;
+    border: 1px solid #ededed;
+    background: #fff;
+    border-radius: 3px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.res_title{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;l
+}
+.res_cuis{
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #8e969d;
+}
+.res_content{
+  padding-left: 0;
+}
+.res_feature,.res_price_range,.res_online{
+  padding-left: 0;
+}
+.list_container a{
+  color: black;
+}
+.map{
+  /*height: 300px;*/
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: white;
+}
+.clear_padding{
+  padding:0;
+}
+.my_location{
+  background-color: blue !important;
+  color: white !important;
+  padding-top: 2px;
+    padding-bottom: 3px;
+}
